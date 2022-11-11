@@ -5,3 +5,21 @@
   font-family: sans-serif;
   list-style-type: none;
 }
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  min-height: 100vh;
+  font-family: 'Averia Libre', display;
+}
+:root {
+  --white: #fff;
+  --qora: #000;
+}
