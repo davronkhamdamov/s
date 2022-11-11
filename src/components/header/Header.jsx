@@ -1,5 +1,7 @@
 import React from 'react';
 import './Header.css';
+import logo from '../../assets/images/logo.png'
+
 function Header() {
   return (
     <div className="header">
@@ -7,7 +9,7 @@ function Header() {
         <div className="img">
           <a href=" index.html">
             <img
-              src="https://bizmonthly.com/wp-content/uploads/2020/04/amazon-logo-black.png"
+              src={logo}
               alt=""
               width={100}
             />
