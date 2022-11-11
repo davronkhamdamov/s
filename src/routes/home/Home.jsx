@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '../../components/header/Header'
+import HeroBanner from '../../components/hero-banner/HeroBanner'
 
 const Home = () => {
   return (
     <div>
-      <Header/>
+      <HeroBanner/>
     </div>
   )
 }

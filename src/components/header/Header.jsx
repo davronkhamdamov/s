@@ -1,8 +1,14 @@
 import React from 'react';
 import './Header.css';
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo.png';
+import { useLocation } from 'react-router-dom';
 
 function Header() {
+  const { pathname } = useLocation();
+
+  if(pathname.includes("login") || pathname.includes("signup")){
+    return
+  }
   return (
     <div className="header">
       <header>
