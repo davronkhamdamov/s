@@ -7,3 +7,17 @@
 .container:has(.hero-banner){
   padding: 0;
 }
+
+.container:has(main){
+  max-width: 1500px !important;
+}
+
+.back-to-top{
+  width: 100%;
+  padding: 15px 0;
+  background-color: #485769;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}

@@ -64,7 +64,7 @@ form {
 }
 
 .filter {
-  width: 8%;
+  width: auto;
   height: 40px;
   font-size: 12px;
   background: #eee;
@@ -72,6 +72,7 @@ form {
   border-right: 1px solid #00000027;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
+
 }
 .filter option {
   font-size: 14px;

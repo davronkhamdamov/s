@@ -1,68 +1,89 @@
-import { Container } from "../../utils"
-import "./HeroBanner.css";
-import { useRef, useState, useEffect } from "react";
-import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
+import React, { useState, useRef } from "react";
+import c from "./HeroBanner.module.css";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { useEffect } from "react";
 
-const HeroBanner = () => {
-  const [carouselScrollLength, setCarouselScrollLength] = useState(0);
-  const $carousel = useRef();
+const Banner = () => {
+  const [imageCount, setImageCount] = useState(0);
+  const imageCon = useRef();
 
-  const bannerImages = [
-    "https://m.media-amazon.com/images/I/71aQ3u78A3L._SX3000_.jpg",
-    "https://m.media-amazon.com/images/I/71dbxIcDioL._SX3000_.jpg",
-    "https://m.media-amazon.com/images/I/71tIrZqybrL._SX3000_.jpg",
-    "https://m.media-amazon.com/images/I/61TD5JLGhIL._SX3000_.jpg",
+  const images = [
+    "https://m.media-amazon.com/images/I/61-8rBAD68L._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/61jovjd+f9L._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/61BvxKSpy3L._SX3000_.jpg",
-    "https://m.media-amazon.com/images/I/71qid7QFWJL._SX3000_.jpg"
-  ]
+    "https://m.media-amazon.com/images/I/61TD5JLGhIL._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/71qid7QFWJL._SX3000_.jpg",
+  ];
 
-  const swipeLeft = () => {
+  const prevImage = () => {
+    if (imageCount === 0) {
+      setImageCount(images.length - 1);
+    } else {
+      setImageCount(imageCount - 1);
+    }
+  };
 
-    if(carouselScrollLength > 0){
-      setCarouselScrollLength(carouselScrollLength - 1)
+  const nextImage = () => {
+    if (imageCount < images.length - 1) {
+      setImageCount(imageCount + 1);
+    } else {
+      setImageCount(0);
     }
-    else{
-      setCarouselScrollLength(6)
-    }
-  }
-
-  const swipeRight = () => {
-    if(carouselScrollLength < bannerImages.length - 1){
-      setCarouselScrollLength(carouselScrollLength + 1)
-    }
-    else{
-      setCarouselScrollLength(0)
-    }
-  }
-
-  console.log(carouselScrollLength)
+  };
 
   useEffect(() => {
-    // $carousel.current.scrollBy({
-    //   left: 1440,
-    //   behavior: "smooth"
-    // })
-  }, [carouselScrollLength])
-  
+    imageCon.current.scrollLeft = imageCount * imageCon.current.offsetWidth;
+  }, [imageCount]);
 
   return (
-    <Container>
-      <div className="hero-banner">
-        <div className="carousel" ref={$carousel}>
-          {/* {
-            bannerImages.map(carouselItem => 
-              <div className="carousel__item"> */}
-                <img className="carousel__item-image" src={bannerImages[carouselScrollLength]} alt="" />
-              {/* </div>  
-            )
-          } */}
-        </div>
-        <button onClick={swipeLeft} className="carousel-prev-btn"><SlArrowLeft/></button>
-        <button onClick={swipeRight} className="carousel-next-btn"><SlArrowRight/></button>
+    <div className={c.banner}>
+      <button
+        className={c.left_btn}
+        onClick={() => {
+          if (imageCount === 0) {
+            setImageCount(images.length - 1);
+          } else {
+            setImageCount((imageCount) => imageCount - 1);
+          }
+        }}
+      >
+        <FiChevronLeft />
+      </button>
+      <div ref={imageCon} className={c.image__container}>
+        {images.map((item) => (
+          <img className={c.banner__image} src={item} alt="" />
+        ))}
       </div>
-    </Container>
-  )
-}
+      <button
+        className={c.right_btn}
+        onClick={() => {
+          if (imageCount === images.length - 1) {
+            setImageCount(0);
+          } else {
+            setImageCount((imageCount) => imageCount + 1);
+          }
+        }}
+      >
+        <FiChevronRight />
+      </button>
 
-export default HeroBanner
+      <div className={c.dots}>
+        {images.map((dot, index) => (
+          <div
+            onClick={() => setImageCount(index)}
+            style={
+              index === imageCount
+                ? { background: "dodgerblue", transform: "scale(1.3)" }
+                : null
+            }
+            className={c.point}
+          >
+            {" "}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Banner;
