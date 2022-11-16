@@ -1,6 +1,7 @@
 .banner{
   width: 80%;
   height: 700px;
+  max-width: 1440px;
   background-color: #ffff;
   margin: 0px auto;
   position: relative;
