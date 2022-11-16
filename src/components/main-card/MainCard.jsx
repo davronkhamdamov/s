@@ -8,9 +8,10 @@ const MainCard = ({ image, title, linkText, linkURL, cardImages }) => {
       <h2>{title}</h2>
       {
         cardImages ? cardImages.map(item => 
-          <div>
+          <Link to={item.link}>
             <img src={item.image} alt="" />
-          </div>  
+            <p>{item.subtitle}</p>
+          </Link>  
         ) : <img  src={image}/>
       }
       <Link to={linkURL}>{linkText}</Link>

@@ -13,7 +13,7 @@
   align-items: flex-start;
   display: flex;
   height: 700px;
-  overflow: hidden;
+  overflow: auto;
   scroll-behavior: smooth;
   position: relative;
 }
