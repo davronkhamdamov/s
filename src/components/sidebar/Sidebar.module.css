@@ -132,3 +132,8 @@
 .hidden {
   display: none;
 }
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 200px;
+  }
+}
