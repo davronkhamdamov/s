@@ -1,0 +1,114 @@
+footer {
+  width: 100%;
+  height: auto;
+}
+.footerHero {
+  width: 100%;
+  height: 400px;
+  background: #232f3e;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  padding-top: 50px;
+  color: #fff;
+}
+.title {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.link {
+  font-size: 14px;
+  color: #ddd;
+  margin-top: 10px;
+}
+.footerWrapper {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #dddddd1a;
+  background: #232f3e;
+}
+.footerItem {
+  width: 650px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.footerLogo {
+  width: 80px;
+}
+.footerSelect {
+  width: max-content;
+  height: 35px;
+  border: 1px solid #dddddd77;
+  border-radius: 4px;
+  background: transparent;
+  color: white;
+  padding: 4px 15px;
+}
+.footerSelect option {
+  color: black;
+}
+.footerServies {
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+}
+.footerHeroWrapper {
+  width: 100%;
+  height: 450px;
+  background: black;
+  padding: 30px;
+}
+.footerMain {
+  width: 890px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 20px;
+}
+.FooterMainItem {
+  width: 100px;
+  height: auto;
+}
+.FooterMainItem:hover {
+  text-decoration: underline;
+}
+.FooterMainTitle {
+  color: #ddd;
+  font-size: 11px;
+  margin: 3px 0;
+}
+.FooterMainText {
+  color: #aaa;
+  font-size: 10px;
+}
+@media (max-width: 1200px) {
+  .footerHero {
+    height: 300px;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+  }
+  .link {
+    display: none;
+  }
+  .footerTitle {
+    width: 100% !important;
+  }
+  .footerSelect {
+    width: 30%;
+  }
+  .footerLogo {
+    display: none;
+  }
+  .footerHeroWrapper {
+    display: none;
+  }
+  .footerItem {
+    width: 300px;
+  }
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "title": "Get to Know Us",
+    "links": [
+      {
+        "link": "Careers"
+      },
+      {
+        "link": "Blog"
+      },
+      {
+        "link": "About Amazon"
+      },
+      {
+        "link": "Investor Relations"
+      },
+      {
+        "link": "Amazon Devices"
+      },
+      {
+        "link": "Amazon Science"
+      }
+    ]
+  },
+  {
+    "title": "Make Money with Us",
+    "links": [
+      {
+        "link": "Sell products on Amazon"
+      },
+      {
+        "link": "Sell on Amazon Business"
+      },
+      {
+        "link": "Sell apps on Amazon"
+      },
+      {
+        "link": "Become an Affiliate"
+      },
+      {
+        "link": "Advertise Your Products"
+      },
+      {
+        "link": "Self-Publish with Us"
+      },
+      {
+        "link": "Host an Amazon Hub"
+      },
+      {
+        "link": "See More Make Money with Us"
+      }
+    ]
+  },
+  {
+    "title": "Amazon Payment Products",
+    "links": [
+      {
+        "link": "Amazon Business Card"
+      },
+      {
+        "link": "Shop with Points"
+      },
+      {
+        "link": "Reload Your Balance"
+      },
+      {
+        "link": "Amazon Currency Converter"
+      }
+    ]
+  },
+  {
+    "title": "Let Us Help You",
+    "links": [
+      {
+        "link": "Amazon and COVID-19"
+      },
+      {
+        "link": "Your Account"
+      },
+      {
+        "link": "Your Orders"
+      },
+      {
+        "link": "Shipping Rates & Policies"
+      },
+      {
+        "link": "Returns & Replacements"
+      },
+      {
+        "link": "Manage Your Content and Devices"
+      },
+      {
+        "link": "Amazon Assistant"
+      },
+      {
+        "link": "Help"
+      }
+    ]
+  }
+]

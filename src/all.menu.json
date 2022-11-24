@@ -1,0 +1,191 @@
+[
+  {
+    "subBarTitle": "Digital Content & Devices",
+    "items": [
+      {
+        "subListTitle": "Amazon music",
+        "subLists": [
+          {
+            "title": "Stream Music",
+            "text": [
+              "Amazon Music Unlimited",
+              "Free Streaming Music",
+              "Podcasts",
+              "Open Web Player",
+              "Open Web Player",
+              "Download the app"
+            ]
+          }
+        ]
+      },
+      {
+        "subListTitle": "Kindle E-readers & Books",
+        "subLists": [
+          {
+            "title": "Kindle E-Readers",
+            "text": [
+              "All-new Kindle Kids",
+              "All-new Kindle",
+              "Kindle Paperwhite",
+              "Kindle Oasis",
+              "Instroducing Kindle Scribe",
+              "Accessories",
+              "See all Kindle E-Readers"
+            ]
+          }
+        ]
+      },
+      {
+        "subListTitle": "Amazon appStore",
+        "subLists": [
+          {
+            "title": "Stream Music",
+            "text": [
+              "Amazon Music Unlimited",
+              "Free Streaming Music",
+              "Podcasts",
+              "Open Web Player",
+              "Open Web Player",
+              "Download the app"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subBarTitle": "Shop By Department",
+    "items": [
+      {
+        "subListTitle": "Electonics",
+        "subLists": [
+          {
+            "title": "Electronics",
+            "text": [
+              "Accessories",
+              "Camera & Photo",
+              "Car & Veicle Electronics",
+              "Call Phones & Accessories"
+            ]
+          }
+        ]
+      },
+      {
+        "subListTitle": "Computers",
+        "subLists": [
+          {
+            "title": "Computers",
+            "text": [
+              "Computer Accessories",
+              "Computer Components",
+              "Computer & Tablets"
+            ]
+          }
+        ]
+      },
+      {
+        "subListTitle": "Smart Home",
+        "subLists": [
+          {
+            "title": "Smart Home",
+            "text": [
+              "Amazon Smart Home",
+              "Smart Home Ligthting",
+              "Smart Locks and Entry"
+            ]
+          }
+        ]
+      },
+      {
+        "subListTitle": "Arts & Crafts",
+        "subLists": [
+          {
+            "title": "Arts & Crafts",
+            "text": [
+              "Painting Drawing & Art Suppilies",
+              "Beading & Jewelery Making",
+              "Crafting",
+              "Fabric",
+              "Fabric Decorating"
+            ]
+          }
+        ]
+      },
+      {
+        "subListTitle": "Automative",
+        "subLists": [
+          {
+            "title": "Automative",
+            "text": [
+              "Painting Drawing & Art Suppilies",
+              "Beading & Jewelery Making",
+              "Crafting",
+              "Fabric",
+              "Fabric Decorating"
+            ]
+          }
+        ]
+      },
+      {
+        "subListTitle": "Baby",
+        "subLists": [
+          {
+            "title": "Baby",
+            "text": [
+              "Painting Drawing & Art Suppilies",
+              "Beading & Jewelery Making",
+              "Crafting",
+              "Fabric",
+              "Fabric Decorating"
+            ]
+          }
+        ]
+      },
+      {
+        "subListTitle": "Beauty and personal care",
+        "subLists": [
+          {
+            "title": "Beauty and personal care",
+            "text": [
+              "Painting Drawing & Art Suppilies",
+              "Beading & Jewelery Making",
+              "Crafting",
+              "Fabric",
+              "Fabric Decorating"
+            ]
+          }
+        ]
+      },
+      {
+        "subListTitle": "Women's Fashion",
+        "subLists": [
+          {
+            "title": "Women's Fashion",
+            "text": [
+              "Painting Drawing & Art Suppilies",
+              "Beading & Jewelery Making",
+              "Crafting",
+              "Fabric",
+              "Fabric Decorating"
+            ]
+          }
+        ]
+      },
+      {
+        "subListTitle": "Men's Fashion",
+        "subLists": [
+          {
+            "title": "Men's Fashion",
+            "text": [
+              "Painting Drawing & Art Suppilies",
+              "Beading & Jewelery Making",
+              "Crafting",
+              "Fabric",
+              "Fabric Decorating"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

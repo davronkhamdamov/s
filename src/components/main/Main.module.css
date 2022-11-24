@@ -1,13 +1,21 @@
-.main{
+.main {
   height: auto;
-  margin-top:  -200px;
-  z-index: 10;
+  margin-top: -270px;
+  z-index: 2x;
   position: relative;
 }
 
-.wrapper{
+.wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

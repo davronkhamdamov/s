@@ -1,82 +1,94 @@
 .subscribe_box-signin {
   display: flex;
-  height: 120vh;
+  height: 900px;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  background: white;
 }
-
 .login-box {
-  height: auto;
-  min-width: 40%;
-  border-radius: 5px;
-  border: 1px solid gray;
+  width: 350px;
+}
+.email_label {
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 600;
 }
 
 .login-box-registr {
-  width: 80%;
-  margin: auto;
-  position: relative;
-  padding: 14px 0;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #00000023;
+  padding: 25px;
 }
 .introduction-signin {
   font-weight: 400;
-  margin: 10px 0;
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 10px;
 }
-.signin-form > div {
-  margin: 20px 0px;
-}
-
 .signin-form input {
+  width: 100%;
+  height: 30px;
   outline: none;
-  width: 99%;
-  padding: 10px 5px;
+  font-size: 18px;
   border-radius: 5px;
   border: 1px solid gray;
+  padding-left: 6px;
+  transition: 0.2s;
 }
 .signin-form input:focus {
-  box-shadow: 0px 0px 10px orangered;
-  border: 1px solid orangered;
+  box-shadow: 0px 0px 8px -1px #ea7a0a;
 }
 .password-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
 }
-.signin-form label {
+.password-box label {
+  font-size: 13px;
   font-weight: 600;
+  line-height: 30px;
 }
+
 .password-box > span {
-  color: dodgerblue;
+  color: #1e90ff;
   cursor: pointer;
-  font-weight: 400;
+  font-size: 13px;
 }
 .password-box > span:hover {
-  color: orangered;
+  color: #ff4500;
   cursor: pointer;
   text-decoration: underline;
 }
 .btn-signin {
   width: 100%;
-  padding: 10px 0;
+  height: 30px;
   border-radius: 5px;
-  border: none;
-  font-weight: 400;
-  font-size: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.237);
+  font-size: 16px;
   cursor: pointer;
   background-color: rgb(255, 200, 97);
+  margin-top: 20px;
+  transition: 0.2s;
 }
 .btn-signin:hover {
-  background-color: rgb(255, 192, 75);
+  background-color: rgb(255, 177, 33);
 }
 .btn-signin:focus {
-  background-color: rgb(211, 211, 211);
-  box-shadow: 0px 0px 15px orangered;
+  box-shadow: 0px 0px 10px rgb(252, 159, 19);
 }
 .signin-conditions-text {
-  margin-top: 30px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 12px;
 }
 .check-box-signin {
-  margin-top: 35px;
+  width: 200px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .more-info-signin {
   color: dodgerblue;
@@ -84,11 +96,15 @@
 .icon-down-signin {
   color: gray;
 }
+.check-box-signin span {
+  font-size: 14px;
+}
 .icon-down-signin:hover {
   color: black;
 }
 .condition-text-signin-link {
   color: dodgerblue;
+  transition: 0.2s;
 }
 .condition-text-signin-link:hover {
   color: orangered;
@@ -145,19 +161,28 @@
   text-decoration: underline;
 }
 .box-preference-signin {
+  width: 390px;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: rgb(119, 119, 119);
-  margin-top: 40px;
+  margin-top: 20px;
+}
+.box-preference-signin span {
+  font-size: 11px;
+  margin: 0 6px;
 }
 .create-account-signin {
-  padding: 10px 0;
-  width: 100%;
-  margin-top: 20px;
+  width: 350px;
+  height: 30px;
+  margin-top: 15px;
   cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.237);
+  border-radius: 4px;
+  transition: 0.2s;
 }
 .create-account-signin:focus {
-  box-shadow: 0px 0px 15px orangered;
+  box-shadow: 0px 0px 6px -1px #ff4500;
 }
 @media only screen and (max-width: 400px) {
   .box-preference-signin {

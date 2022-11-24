@@ -1,0 +1,145 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+}
+.Result {
+  width: 100%;
+  height: 38px;
+  box-shadow: 0 -2px 5px black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.Resulttext {
+  font-size: 14px;
+}
+.Resulttext span {
+  color: #c45500;
+  font-weight: 600;
+}
+.productHero {
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  display: flex;
+}
+.ProductRating {
+  width: 280px;
+  height: auto;
+}
+.ProductRating > svg {
+  font-size: 19px;
+  color: #c7511f;
+}
+.ProductRating p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.ProductRating h4 {
+  font-size: 14px;
+}
+.ProductRatingtitle {
+  margin-left: 10px;
+}
+.productList {
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+.productList input {
+  width: 17px;
+  height: 20px;
+  margin-right: 3px;
+}
+.btngroup {
+  width: 60%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btngroup input {
+  width: 60px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.btngroup button {
+  width: 40px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.148);
+}
+.ProductResult {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.ProductResultwRrapper {
+  width: 100%;
+  display: flex;
+  border: 1px solid #0000000f;
+  margin-top: 8px;
+  padding: 10px;
+}
+.ProductImgWrapper {
+  width: 300px;
+  height: 270px;
+  background: #eeeeeea6;
+  display: flex;
+  justify-content: center;
+}
+.ProductResultDes {
+  width: max-content;
+  height: 270px;
+  padding: 10px;
+}
+.Resulttitle {
+  font-weight: 400;
+  display: inline;
+}
+.Resulttitle sup {
+  font-size: 13px;
+}
+.sail {
+  display: inline;
+  text-decoration: line-through;
+}
+.ProductData {
+  font-size: 13px;
+  line-height: 25px;
+}
+.ProductAuthor {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+.ProductDes {
+  width: 300px;
+  font-size: 13px;
+}
+hr {
+  margin: 10px 0;
+}
+.ProductResultDesTitle {
+  font-weight: 500;
+}
+.productImg {
+  object-fit: contain;
+}
+.productcategory {
+  text-transform: capitalize;
+  line-height: 30px;
+}
+.productText {
+  width: 400px;
+  font-size: 13px;
+}
+.ProductResultDes > svg {
+  font-size: 19px;
+  color: #c7511f;
+}

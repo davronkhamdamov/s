@@ -1,30 +1,38 @@
 import { Route } from 'react-router-dom';
-import Home from "./home/Home";
-import Login from "./login/Login";
-import SignUp from "./signup/SignUp";
-import CustomerService from './customer-service/CustomerServices'
+import Home from './home/Home';
+import Login from './login/Login';
+import SignUp from './signup/SignUp';
+import CustomerService from './customer-service/CustomerServices';
 import Seemore from './seemore/Seemore';
+import Product from './product/Product';
+import ProductItem from './ProductItem/ProductItem';
 
 const Routes = () => {
   return (
     <>
       <Route exact path="/">
-        <Home/>
+        <Home />
       </Route>
       <Route path="/login">
-          <Login/>
+        <Login />
       </Route>
       <Route path="/signup">
-          <SignUp/>
+        <SignUp />
       </Route>
       <Route path="/customer-service">
         <CustomerService />
       </Route>
-      <Route path="/seemore">
+      <Route exact path="/seemore">
         <Seemore />
       </Route>
+      <Route exact path="/seemore/product">
+        <Product />
+      </Route>
+      <Route path="/seemore/product/:productid">
+        <ProductItem />
+      </Route>
     </>
-  )
-}
+  );
+};
 
-export default Routes
+export default Routes;

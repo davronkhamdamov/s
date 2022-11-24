@@ -1,5 +1,42 @@
-.card{
+.card {
   max-width: 350px;
   height: 385px;
-  background-color: blue;
+  background-color: white;
+  padding: 20px;
+  cursor: pointer;
+  display: grid;
+}
+.list {
+  width: 150px;
+}
+.list p {
+  color: black;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+.imgs:has(.list) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}
+.card img {
+  width: 100%;
+}
+.linkUrl {
+  color: #0011ffc4;
+  font-size: 13px;
+}
+.cardTitle {
+  font-size: 20px;
+  line-height: 30px;
+}
+@media (max-width: 1200px) {
+  .card {
+    width: 300px;
+  }
+  .list img {
+    width: 90px;
+  }
 }

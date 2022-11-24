@@ -1,0 +1,44 @@
+.ProductItemWrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 44px;
+  background: white;
+}
+.productImgItem {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.productImgItem img {
+  width: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+.trakker {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  pointer-events: none;
+  background: url(https://m.media-amazon.com/images/G/01/apparel/rcxgs/tile._CB483369110_.gif);
+}
+.trakkerwrap {
+  width: 600px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.trakkerwrap img {
+  width: 100%;
+  object-fit: contain;
+}
+.preview {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+}

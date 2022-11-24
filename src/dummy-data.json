@@ -1,25 +1,37 @@
 [
   {
-    "cardImages" : [
+    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
+    "title": "Electronics",
+    "linkLabel": "See more",
+    "linkURL": "/seemore"
+  },
+  {
+    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/Fuji_dash_dress_1X._SY304_CB626369146_.jpg",
+    "title": "Electronics",
+    "linkLabel": "See more",
+    "linkURL": "/seemore"
+  },
+  {
+    "cardImages": [
       {
-        "image" : "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/ShoulderPeriod/GW/QuadCard/DT/SP22_W2_Kitchen_GW_QuadCard_DT_1x._SY116_CB606308915_.jpg",
-        "subtitle" : "kitchen",
-        "link" : "/kitchen"
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg",
+        "subtitle": "headers",
+        "link": "/kitchen"
       },
       {
-        "image" : "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/ShoulderPeriod/GW/QuadCard/DT/SP22_W2_ComputersAndAccessories_GW_QuadCard_DT_1x._SY116_CB606308915_.jpg",
-        "subtitle" : "Compiuters&more",
-        "link" : "/computers"
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg",
+        "subtitle": "Compiuters&more",
+        "link": "/computers"
       },
       {
-        "image" : "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/ShoulderPeriod/GW/QuadCard/DT/SP22_W2_Kitchen_GW_QuadCard_DT_1x._SY116_CB606308915_.jpg",
-        "subtitle" : "kitchen",
-        "link" : "/kitchen"
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg",
+        "subtitle": "kitchen",
+        "link": "/kitchen"
       },
       {
-        "image" : "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/ShoulderPeriod/GW/QuadCard/DT/SP22_W2_ComputersAndAccessories_GW_QuadCard_DT_1x._SY116_CB606308915_.jpg",
-        "subtitle" : "Compiuters&more",
-        "link" : "/computers"
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg",
+        "subtitle": "Compiuters&more",
+        "link": "/computers"
       }
     ],
     "title": "Electronics",
@@ -27,79 +39,73 @@
     "linkURL": "/seemore"
   },
   {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg",
+    "cardImages": [
+      {
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg",
+        "subtitle": "headers",
+        "link": "/kitchen"
+      },
+      {
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg",
+        "subtitle": "Compiuters&more",
+        "link": "/computers"
+      },
+      {
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg",
+        "subtitle": "kitchen",
+        "link": "/kitchen"
+      },
+      {
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg",
+        "subtitle": "Compiuters&more",
+        "link": "/computers"
+      }
+    ],
+    "title": "Electronics",
+    "linkLabel": "See more",
+    "linkURL": "/seemore"
+  },
+  {
+    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/events/GFAH/GWDesktop_SingleImageCard_fitathome_1x._SY304_CB434924743_.jpg",
     "title": "Health & Personal Care",
     "linkLabel": "Shop now",
     "linkURL": "/shopnow"
   },
   {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
+    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg",
     "title": "Electronics",
     "linkLabel": "See more",
     "linkURL": "/seemore"
   },
   {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
+    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg",
     "title": "Electronics",
     "linkLabel": "See more",
     "linkURL": "/seemore"
   },
   {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
-    "title": "Electronics",
-    "linkLabel": "See more",
-    "linkURL": "/seemore"
-  },
-  {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
-    "title": "Electronics",
-    "linkLabel": "See more",
-    "linkURL": "/seemore"
-  },
-  {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
-    "title": "Electronics",
-    "linkLabel": "See more",
-    "linkURL": "/seemore"
-  },
-  {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
-    "title": "Electronics",
-    "linkLabel": "See more",
-    "linkURL": "/seemore"
-  },
-  {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
-    "title": "Electronics",
-    "linkLabel": "See more",
-    "linkURL": "/seemore"
-  },
-  {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
-    "title": "Electronics",
-    "linkLabel": "See more",
-    "linkURL": "/seemore"
-  },
-  {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
-    "title": "Electronics",
-    "linkLabel": "See more",
-    "linkURL": "/seemore"
-  },
-  {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
-    "title": "Electronics",
-    "linkLabel": "See more",
-    "linkURL": "/seemore"
-  },
-  {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
-    "title": "Electronics",
-    "linkLabel": "See more",
-    "linkURL": "/seemore"
-  },
-  {
-    "cardImage": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
+    "cardImages": [
+      {
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/ShoulderPeriod/GW/QuadCard/DT/SP22_W2_DealsOnGifts_GW_QuadCard_DT_1x._SY116_CB606308915_.jpg",
+        "subtitle": "kitchen",
+        "link": "/kitchen"
+      },
+      {
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/ShoulderPeriod/GW/QuadCard/DT/SP22_W2_Beauty_GW_QuadCard_DT_1x._SY116_CB606158908_.jpg",
+        "subtitle": "Compiuters&more",
+        "link": "/computers"
+      },
+      {
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/ShoulderPeriod/GW/QuadCard/DT/SP22_W2_TVAndAccessories_GW_QuadCard_DT_1x._SY116_CB606308914_.jpg",
+        "subtitle": "kitchen",
+        "link": "/kitchen"
+      },
+      {
+        "image": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/ShoulderPeriod/GW/QuadCard/DT/SP22_W2_Fashion_GW_QuadCard_DT_1x._SY116_CB606308915_.jpg",
+        "subtitle": "Compiuters&more",
+        "link": "/computers"
+      }
+    ],
     "title": "Electronics",
     "linkLabel": "See more",
     "linkURL": "/seemore"
