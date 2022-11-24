@@ -5,13 +5,16 @@ import c from './Product.module.css';
 // import { v4 as uuidv4 } from 'uuid';
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { BsStarHalf } from 'react-icons/bs';
+import Loader from '../../components/loader/Loader';
 
 const Product = () => {
+  const [loader, setLoader] = useState(true);
   const [allData, setAllData] = useState(null);
   useState(() => {
-    axios
-      .get('http://localhost:8000/v2/allproducts')
-      .then((res) => setAllData(res.data));
+    axios.get('http://localhost:8000/v2/allproducts').then((res) => {
+      res.status && setLoader(false);
+      setAllData(res.data);
+    });
   }, []);
   return (
     <div className={c.wrapper}>
@@ -152,6 +155,7 @@ const Product = () => {
           })}
         </div>
       </div>
+      {loader && <Loader />}
     </div>
   );
 };
