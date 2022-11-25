@@ -1,8 +1,8 @@
-import "./SignUp.css";
+import './SignUp.css';
 
-import loginLogo from "../../assets/images/login_logo.png";
-import { Si1Password } from "react-icons/si";
-import { FaCaretRight } from "react-icons/fa";
+import loginLogo from '../../assets/images/login_logo.png';
+import { Si1Password } from 'react-icons/si';
+import { FaCaretRight } from 'react-icons/fa';
 
 const Signup = () => {
   return (
@@ -41,8 +41,7 @@ const Signup = () => {
                 type="text"
               />
               <div className="warning-box-signup">
-                <Si1Password />{" "}
-                <span>Passwords must be at least 6 characters.</span>
+                <Si1Password /> <span>Passwords be at least 6 characters.</span>
               </div>
             </div>
             <div className="password-input-repeat-box">
@@ -57,23 +56,23 @@ const Signup = () => {
               />
             </div>
             <button className="btn-create-account-signup">
-              Create your Amazon account{" "}
+              Create your Amazon account{' '}
             </button>
           </form>
           <p className="signup-conditions-text">
-            By continuing, you agree to Amazon's{" "}
+            By continuing, you agree to Amazon's{' '}
             <span className="condition-text-signup-link">
-              {" "}
-              Conditions of Use{" "}
-            </span>{" "}
-            and{" "}
+              {' '}
+              Conditions of Use{' '}
+            </span>{' '}
+            and{' '}
             <span className="condition-text-signup-link"> Privacy Notice </span>
-            .{" "}
+            .{' '}
           </p>
           <div className="moreinfo-box-signup">
-            <p>Already have an account?</p>{" "}
+            <p>Already have an account?</p>{' '}
             <span className="signin-link-account">
-              Sign in <FaCaretRight />{" "}
+              Sign in <FaCaretRight />{' '}
             </span>
           </div>
         </div>

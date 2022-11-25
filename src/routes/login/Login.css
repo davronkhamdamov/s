@@ -180,12 +180,22 @@
   border: 1px solid rgba(0, 0, 0, 0.237);
   border-radius: 4px;
   transition: 0.2s;
+  background: #eee;
+  text-align: center;
+  font-size: 13px;
+  padding: 6px;
+  color: black;
 }
 .create-account-signin:focus {
   box-shadow: 0px 0px 6px -1px #ff4500;
 }
-@media only screen and (max-width: 400px) {
+@media (max-width: 1200px) {
+  .signin-form {
+    display: block;
+  }
+  .login-box,
+  .create-account-signin,
   .box-preference-signin {
-    display: none;
+    width: 300px;
   }
 }

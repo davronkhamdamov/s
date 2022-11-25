@@ -21,7 +21,7 @@ const Loader = () => {
           cx="64"
           cy="64"
           fill="none"
-          stroke="hsla(0,10%,10%,0.1)"
+          stroke="hsl(0,10%,10%)"
           stroke-width="16"
           stroke-linecap="round"
         />
