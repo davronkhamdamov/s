@@ -11,12 +11,17 @@ const Footer = () => {
         {footerHeroData.map((el) => {
           return (
             <div
+              key={uuidv4()}
               className={c.footerTitle}
               style={{ width: `${el.title.length * 0.6}%` }}
             >
               <h3 className={c.title}>{el.title}</h3>
               {el.links.map((el) => {
-                return <p className={c.link}>{el.link}</p>;
+                return (
+                  <p key={uuidv4()} className={c.link}>
+                    {el.link}
+                  </p>
+                );
               })}
             </div>
           );
@@ -47,8 +52,8 @@ const Footer = () => {
         <div className={c.footerMain}>
           {footerMainData.map((el) => {
             return (
-              <a href={el.title} className={c.FooterMainItem}>
-                <p key={uuidv4} className={c.FooterMainTitle}>
+              <a key={uuidv4()} href={el.title} className={c.FooterMainItem}>
+                <p key={uuidv4()} className={c.FooterMainTitle}>
                   {el.title}
                 </p>
                 <p className={c.FooterMainText}>{el.text}</p>

@@ -30,8 +30,8 @@ function MainCardSlider() {
       <div className={c.wrap} ref={g}>
         {sliderCardData.map((el) => {
           return (
-            <div>
-              <div key={uuidv4} className={c.sliders}>
+            <div key={uuidv4()}>
+              <div className={c.sliders}>
                 <img src={el.img} alt="" />
               </div>
             </div>

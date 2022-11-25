@@ -10,7 +10,7 @@ const MainCard = ({ image, title, linkText, linkURL, cardImages }) => {
       <div className={c.imgs}>
         {cardImages ? (
           cardImages.map((item) => (
-            <Link key={uuidv4} className={c.list} to={'/seemore/product'}>
+            <Link key={uuidv4()} className={c.list} to={'/seemore/product'}>
               <img src={item.image} alt="" />
               <p>{item.subtitle}</p>
             </Link>

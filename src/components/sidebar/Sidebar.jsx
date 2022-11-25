@@ -5,6 +5,7 @@ import { FiX } from 'react-icons/fi';
 import { FaUserCircle } from 'react-icons/fa';
 import { useEffect, useRef, useState } from 'react';
 import data from '../../all.menu.json';
+import { v4 as uuidv4 } from 'uuid';
 
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   const sidebaropen = useRef();
@@ -33,11 +34,12 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           </div>
           {data.map((el) => {
             return (
-              <div className={c.cliderData}>
+              <div key={uuidv4()} className={c.cliderData}>
                 <h2 className={c.subBarTitle}>{el.subBarTitle}</h2>
                 {el.items.slice(0, sidebarLimit).map((e) => {
                   return (
                     <div
+                      key={uuidv4()}
                       className={c.subListTitle}
                       onClick={() => {
                         setSelectedSidebarItem(e.subLists);
@@ -72,7 +74,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           </div>
           {selectedSidebarItem?.map((element) => {
             return (
-              <div className={c.sliderOpenWrapper}>
+              <div key={uuidv4()} className={c.sliderOpenWrapper}>
                 <div
                   className={c.backBtn}
                   onClick={() => {
@@ -85,7 +87,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
                 <h2 className={c.sliderOpenTitle}>{element.title}</h2>
                 {element.text.map((el) => {
                   return (
-                    <div className={c.openSlideText}>
+                    <div key={uuidv4()} className={c.openSlideText}>
                       <p>{el}</p>
                     </div>
                   );

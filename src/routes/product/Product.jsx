@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import c from './Product.module.css';
-// import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { BsStarHalf } from 'react-icons/bs';
 import Loader from '../../components/loader/Loader';
@@ -110,7 +110,7 @@ const Product = () => {
           <h3>RESULTS</h3>
           {allData?.map((el) => {
             return (
-              <div className={c.ProductResultwRrapper}>
+              <div key={uuidv4()} className={c.ProductResultwRrapper}>
                 <Link
                   to={`/seemore/product/${el._id}`}
                   className={c.ProductImgWrapper}
