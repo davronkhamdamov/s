@@ -44,7 +44,7 @@
   border: none;
   color: #000;
   border-radius: 3px;
-  z-index: 5;
+  z-index: 59;
 }
 
 .right_btn {
@@ -57,7 +57,7 @@
   background-color: transparent;
   border: none;
   color: #000;
-  z-index: 5;
+  z-index: 9;
 }
 
 .right_btn:focus,

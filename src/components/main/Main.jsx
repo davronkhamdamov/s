@@ -2,7 +2,6 @@ import c from './Main.module.css';
 import { Container } from '../../utils';
 import MainCard from '../main-card/MainCard';
 import allCards from '../../dummy-data.json';
-// import sliderCardData from '../../sliderCard-data.json';
 import { v4 as uuidv4 } from 'uuid';
 import MainCardSlider from '../main-card-slider/MainCardSlider';
 const Main = () => {

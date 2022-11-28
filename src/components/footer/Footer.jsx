@@ -3,8 +3,12 @@ import footerHeroData from '../../footer.data.json';
 import amazonLogo from '../../assets/images/logo.png';
 import footerMainData from '../../footer.main.json';
 import { v4 as uuidv4 } from 'uuid';
-
+import { useLocation } from 'react-router-dom';
 const Footer = () => {
+  const { pathname } = useLocation();
+  if (pathname.includes('login') || pathname.includes('signup')) {
+    return;
+  }
   return (
     <footer>
       <div className={c.footerHero}>

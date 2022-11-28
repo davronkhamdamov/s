@@ -59,9 +59,11 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
                       : setSidebarLimit(4);
                   }}
                 >
-                  <p className={c.sidebarAllData}>
-                    {sidebarLimit <= 4 ? 'See More' : 'See Less'}
-                  </p>
+                  {el.items.length > 4 && (
+                    <p className={c.sidebarAllData}>
+                      {sidebarLimit === 4 ? 'See More' : 'See Less'}
+                    </p>
+                  )}
                 </div>
               </div>
             );
@@ -98,7 +100,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         </div>
       </div>
       <FiX
-        className={isSidebarOpen === true ? `${c.close}` : `${c.hidden}`}
+        className={isSidebarOpen ? `${c.close}` : `${c.hidden}`}
         onClick={() => {
           setIsSidebarOpen(false);
         }}

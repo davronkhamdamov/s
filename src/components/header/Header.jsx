@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import logo from '../../assets/images/logo.png';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import Flags from 'react-world-flags';
+import Loader from '../loader/Loader';
 
 function Header({ isSidebarOpen, setIsSidebarOpen }) {
+  const [view, setView] = useState(false);
+  const [loader, setLoader] = useState(true);
   const { pathname } = useLocation();
   if (pathname.includes('login') || pathname.includes('signup')) {
     return;
   }
+  setTimeout(() => {
+    setLoader(false);
+  }, 1500);
   return (
     <>
       <div className="header">
@@ -53,12 +60,19 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
             </svg>
             <div className="location__icon">
               <p className="location__title">Deliver to</p>
+
               <p className="location__text">Uzbekistan</p>
             </div>
           </div>
           <form action="post">
             <div className="form">
-              <select name="filter" className="filter">
+              <select
+                name="filter"
+                onFocus={() => {
+                  setView(true);
+                }}
+                className="filter"
+              >
                 <option value="all">All Departments</option>
                 <option value="arts">Arts & Crafts</option>
                 <option value="automotive">Automotive</option>
@@ -66,7 +80,14 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
                 <option value="beauty">Beauty & Personal Care</option>
                 <option value="books">Books</option>
               </select>
-              <input type="text" id="text" className="form__input" />
+              <input
+                onFocus={() => {
+                  setView(true);
+                }}
+                type="text"
+                id="text"
+                className="form__input"
+              />
               <div className="border"></div>
               <button className="form__btn">
                 <svg
@@ -87,10 +108,50 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
           </form>
           <div className="language">
             <a className="language__link" href="index.html">
-              <img src="" alt="" />
-              <img src="" alt="" />
+              <Flags code="us" width="29" />
+              EN
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="10"
+                viewBox="0 0 24 24"
+              >
+                <polyline
+                  fill="none"
+                  stroke="#fff"
+                  strokeWidth="2"
+                  points="7.086 3.174 17.086 13.174 7.086 23.174"
+                  transform="scale(1 -1) rotate(-89 -1.32 0)"
+                />
+              </svg>
             </a>
+            <div className="language-modal">
+              <p>Change language</p>
+              <Link to="/" className="languageLink">
+                Learn more
+              </Link>
+              <div className="changeLanguage">
+                <div className="radioinput" value="en">
+                  <div className="activelng"></div>
+                </div>
+                <p>English - EN</p>
+              </div>
+              <div className="hr"></div>
+              <div className="changeLanguage">
+                <div className="radioinput" value="uz">
+                  <div className="nothing"></div>
+                </div>
+                <p>Uzbek - UZ</p>
+              </div>
+              <div className="changeLanguage" value="ru">
+                <div className="radioinput">
+                  <div className="nothing"></div>
+                </div>
+                <p>Russia - RU</p>
+              </div>
+            </div>
           </div>
+          <div className="languageView"></div>
           <div className="login">
             <a href="/login">
               <p className="login__sign">Hello, sign in</p>
@@ -112,7 +173,45 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
                 </svg>
               </div>
             </a>
+            <div className="sign-modal">
+              <div className="sign-modal-login">
+                <div className="sign-modal-login-btn">
+                  <button>Sign in</button>
+                </div>
+                <div className="sign-modal-login-text">
+                  <p className="sign-modal-login__phograph">New customer?</p>
+                  <a className="sign-modal-login__link" href="index.html">
+                    Stay here
+                  </a>
+                </div>
+              </div>
+              <div className="hr"></div>
+              <div className="sign-hero">
+                <div className="sign-login">
+                  <h4>Your Lists</h4>
+                  <a href="index.html">Create a List</a>
+                  <a href="index.html">Find a List or Registry</a>
+                  <a href="index.html">Amazon Smile Charity Lists</a>
+                </div>
+                <div className="line"></div>
+                <div className="sign-login">
+                  <h4>Your Account</h4>
+                  <a href="index.html">Account</a>
+                  <a href="index.html">Orders</a>
+                  <a href="index.html">Recommendations</a>
+                  <a href="index.html">Browsing History</a>
+                  <a href="index.html">Watchlist</a>
+                  <a href="index.html">Video Purchases & Rentals</a>
+                  <a href="index.html">Kindle Unlimited</a>
+                  <a href="index.html">Content & Devices</a>
+                  <a href="index.html">Subscribe & Save Items </a>
+                  <a href="index.html">Memberships & Subscriptions</a>
+                  <a href="index.html">Music Library</a>
+                </div>
+              </div>
+            </div>
           </div>
+          <div className="loginview"></div>
           <div className="order">
             <p className="order__return">Returns</p>
             <p className="order__orders">& Orders</p>
@@ -183,7 +282,7 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
               <a href="index.html">12 Days of Deals</a>
             </div>
             <div className="navbar-nav-link">
-              <a href="index.html">Customer Service</a>
+              <a href="/customer-service">Customer Service</a>
             </div>
             <div className="navbar-nav-link">
               <a href="index.html">Registry</a>
@@ -196,6 +295,12 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
             </div>
           </div>
         </div>
+        <div
+          onClick={() => {
+            setView(false);
+          }}
+          className={view ? 'view' : null}
+        ></div>
       </div>
       <div
         className={isSidebarOpen ? 'viewe' : null}
@@ -203,8 +308,8 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
           setIsSidebarOpen(false);
         }}
       ></div>
+      {loader && <Loader />}
     </>
   );
 }
-
 export default Header;

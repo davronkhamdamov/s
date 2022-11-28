@@ -20,6 +20,10 @@ const Banner = () => {
     imageCon.current.scrollLeft = imageCount * imageCon.current.offsetWidth;
   }, [imageCount]);
 
+  // setInterval(() => {
+  //   setImageCount(imageCount + 1);
+  // }, 3500);
+
   return (
     <div className={c.banner}>
       <button
@@ -51,9 +55,8 @@ const Banner = () => {
       >
         <FiChevronRight />
       </button>
-
       <div className={c.dots}>
-        {images.map((dot, index) => (
+        {images.map((el, index) => (
           <div
             onClick={() => setImageCount(index)}
             style={
@@ -63,9 +66,7 @@ const Banner = () => {
             }
             className={c.point}
             key={uuidv4()}
-          >
-            {' '}
-          </div>
+          ></div>
         ))}
       </div>
     </div>

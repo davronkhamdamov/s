@@ -22,7 +22,7 @@ const Signup = () => {
               />
             </div>
             <div className="email-input-box-signup">
-              <label htmlFor="email-input-signup">Email</label>
+              <label htmlFor="email-input-signup">Mobile number or email</label>
               <input
                 required
                 type="text"
@@ -55,9 +55,7 @@ const Signup = () => {
                 type="text"
               />
             </div>
-            <button className="btn-create-account-signup">
-              Create your Amazon account{' '}
-            </button>
+            <button className="btn-create-account-signup">Continue</button>
           </form>
           <p className="signup-conditions-text">
             By continuing, you agree to Amazon's{' '}
@@ -69,14 +67,23 @@ const Signup = () => {
             <span className="condition-text-signup-link"> Privacy Notice </span>
             .{' '}
           </p>
-          <div className="moreinfo-box-signup">
-            <p>Already have an account?</p>{' '}
+          <div className="linear"></div>
+          <div className="moreinfo-box-signup margin">
+            <p>Already have an account?</p>
             <span className="signin-link-account">
-              Sign in <FaCaretRight />{' '}
+              Sign in <FaCaretRight />
+            </span>
+          </div>
+          <div className="moreinfo-box-signup">
+            <p>Buying for work?</p>
+            <span className="signin-link-account">
+              Create a free business account
+              <FaCaretRight />
             </span>
           </div>
         </div>
       </div>
+      <div className="linear"></div>
     </div>
   );
 };
