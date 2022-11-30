@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import './index.css';
 import { useLocation } from 'react-router-dom';
 const Container = (props) => {
@@ -9,10 +8,6 @@ const BackToTop = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   const { pathname } = useLocation();
   if (pathname.includes('login') || pathname.includes('signup')) {
     return;

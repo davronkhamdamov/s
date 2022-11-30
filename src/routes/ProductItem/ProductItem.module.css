@@ -1,5 +1,9 @@
+.wrapper {
+  display: flex;
+}
+
 .ProductItemWrapper {
-  width: 100%;
+  width: 50%;
   min-height: 100vh;
   padding: 20px;
   display: flex;
@@ -7,17 +11,21 @@
   gap: 44px;
   background: white;
 }
+
 .productImgItem {
   width: 50px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .productImgItem img {
   width: 100%;
   object-fit: contain;
   transition: 0.3s;
+  border-radius: 3px;
 }
+
 .trakker {
   width: 200px;
   height: 200px;
@@ -25,6 +33,7 @@
   pointer-events: none;
   background: url(https://m.media-amazon.com/images/G/01/apparel/rcxgs/tile._CB483369110_.gif);
 }
+
 .trakkerwrap {
   width: 600px;
   overflow: hidden;
@@ -35,10 +44,81 @@
 .trakkerwrap img {
   width: 100%;
   object-fit: contain;
+  border-radius: 8px;
 }
+
 .preview {
   width: 500px;
   height: 500px;
   position: absolute;
   left: 50%;
+  border-radius: 8px;
+  z-index: 9;
+}
+
+.prductInfo {
+  width: 50%;
+  height: auto;
+  padding: 50px 10px;
+}
+
+.Resulttitle {
+  letter-spacing: 2px;
+}
+
+.ProductResultDesTitle {
+  margin: 10px 0;
+}
+
+.Resulttitle,
+.sail {
+  display: inline;
+  line-height: 40px;
+}
+
+.productcategory {
+  text-transform: capitalize;
+  line-height: 30px;
+}
+
+.productText {
+  margin: 10px 0;
+}
+
+.sail {
+  text-decoration: line-through;
+  letter-spacing: 1px;
+  color: red;
+}
+
+.ProductResultwRrapper {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .preview {
+    display: none;
+  }
+
+  .trakker {
+    display: none;
+  }
+
+  .ProductItemWrapper,
+  .prductInfo {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .ProductItemWrapper,
+  .prductInfo {
+    min-height: 300px;
+    width: 100%;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
 }

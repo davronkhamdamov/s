@@ -4,10 +4,13 @@ import logo from '../../assets/images/logo.png';
 import { Link, useLocation } from 'react-router-dom';
 import Flags from 'react-world-flags';
 import Loader from '../loader/Loader';
+import { useSelector } from 'react-redux';
 
 function Header({ isSidebarOpen, setIsSidebarOpen }) {
+  const product = useSelector((id) => id);
   const [view, setView] = useState(false);
   const [loader, setLoader] = useState(true);
+  const [select, setSelect] = useState('all');
   const { pathname } = useLocation();
   if (pathname.includes('login') || pathname.includes('signup')) {
     return;
@@ -67,17 +70,23 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
           <form action="post">
             <div className="form">
               <select
+                style={{ width: `${select.length * 13}px` }}
+                onChange={(e) => {
+                  setSelect(e.target.value);
+                }}
                 name="filter"
                 onFocus={() => {
                   setView(true);
                 }}
                 className="filter"
               >
-                <option value="all">All Departments</option>
-                <option value="arts">Arts & Crafts</option>
+                <option value="allDepartments">All Departments</option>
+                <option value="artsCrafts">Arts & Crafts</option>
                 <option value="automotive">Automotive</option>
                 <option value="baby">Baby</option>
-                <option value="beauty">Beauty & Personal Care</option>
+                <option value="beautyPersonalCare">
+                  Beauty & Personal Care
+                </option>
                 <option value="books">Books</option>
               </select>
               <input
@@ -217,7 +226,8 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
             <p className="order__orders">& Orders</p>
           </div>
           <div className="card">
-            <a className="card-link" href="index.html">
+            <Link to="/shop" className="card-link" href="index.html">
+              <span className="cardCount">{product.id.id ? '1' : '0'}</span>
               <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
                 <path
                   stroke="#fff"
@@ -225,7 +235,7 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
                 />
               </svg>
               <p className="card-link__text">Cart</p>
-            </a>
+            </Link>
           </div>
         </header>
         <div className="mobileinput">

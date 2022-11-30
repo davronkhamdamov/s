@@ -1,0 +1,53 @@
+.emptyShop {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.shopping {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: white;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.productAdress {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.productAuthor,
+.productPhone {
+    margin: 8px 0;
+}
+
+.productdescible {
+    margin-bottom: 20px;
+}
+
+.buy p {
+    margin-bottom: 10px;
+}
+
+.shopBtn {
+    width: 150px;
+    height: 30px;
+    background: #2222ff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+}
+
+.shopBtn:active {
+    background: #0101b0;
+}
+
+.shopping img {
+    object-fit: contain;
+}
+
+.productdes {
+    width: 50%;
+}

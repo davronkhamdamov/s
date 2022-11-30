@@ -158,10 +158,11 @@ hr {
     width: 300px;
   }
   .ProductResultwRrapper {
-    max-width: 400px;
+    max-width: 600px;
     height: 550px;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .productText {
     width: 300px;

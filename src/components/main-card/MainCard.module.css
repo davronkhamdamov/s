@@ -1,5 +1,6 @@
 .card {
   max-width: 350px;
+  width: 100%;
   height: 385px;
   background-color: white;
   padding: 20px;
@@ -34,9 +35,17 @@
 }
 @media (max-width: 1200px) {
   .card {
-    width: 300px;
+    max-width: 300px;
   }
   .list img {
     width: 90px;
+  }
+}
+@media (max-width: 650px) {
+  .card {
+    max-width: 400px;
+  }
+  .list img {
+    width: 100%;
   }
 }

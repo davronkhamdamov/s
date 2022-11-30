@@ -7,6 +7,7 @@ header {
   padding: 0 10px;
   position: relative;
 }
+
 .img {
   width: 120px;
   height: 80%;
@@ -33,11 +34,13 @@ header {
 .location__icon {
   color: var(--white);
 }
+
 .location__title {
   font-size: 12px;
   color: #aaa;
   line-height: 10px;
 }
+
 .location__text {
   font-weight: 700;
   font-size: 14px;
@@ -48,6 +51,7 @@ header {
 form {
   flex: 1;
 }
+
 .form {
   width: 100%;
   display: flex;
@@ -56,6 +60,7 @@ form {
   justify-content: space-between;
   position: relative;
 }
+
 .border {
   width: 100%;
   height: 40px;
@@ -66,7 +71,6 @@ form {
 }
 
 .filter {
-  width: auto;
   height: 40px;
   font-size: 12px;
   background: #eee;
@@ -75,9 +79,11 @@ form {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
+
 .filter option {
   font-size: 14px;
 }
+
 .form .form__input {
   width: 100%;
   outline: 2px #ffb536;
@@ -85,6 +91,7 @@ form {
   padding: 10px;
   font-size: 16px;
 }
+
 .view {
   width: 100%;
   height: 100vw;
@@ -93,10 +100,12 @@ form {
   background: rgba(0, 0, 0, 0.6);
   z-index: 99;
 }
-.form__input:focus ~ .border,
-.filter:focus ~ .border {
+
+.form__input:focus~.border,
+.filter:focus~.border {
   display: block;
 }
+
 .form__btn {
   width: 50px;
   border: none;
@@ -116,9 +125,11 @@ form {
   padding: 6px 6px 0;
   z-index: 9;
 }
+
 .language:hover .language-modal {
   display: block;
 }
+
 .language__link {
   width: 100%;
   height: 40px;
@@ -127,6 +138,7 @@ form {
   font-size: 13px;
   font-weight: 700;
 }
+
 .language-modal {
   width: 250px;
   height: auto;
@@ -139,21 +151,25 @@ form {
   padding: 14px;
   display: none;
 }
+
 .language-modal p {
   font-size: 13px;
   display: inline;
   font-family: sans-serif;
   margin-right: 10px;
 }
+
 .changeLanguage p:hover {
   text-decoration: underline;
   color: #ff7424;
 }
+
 .languageLink {
   color: #007185;
   font-size: 11px;
   font-weight: 500;
 }
+
 .radioinput {
   width: 20px;
   height: 20px;
@@ -164,21 +180,25 @@ form {
   align-items: center;
   justify-content: center;
 }
+
 .radioinput .activelng {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #ff7424;
 }
+
 .nothing {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   transition: 0.5s;
 }
+
 .changeLanguage:hover .nothing {
   background: #ff7424;
 }
+
 .changeLanguage {
   width: max-content;
   height: 40px;
@@ -186,9 +206,11 @@ form {
   align-items: center;
   justify-content: space-between;
 }
+
 .changeLanguage p {
   font-size: 13px;
 }
+
 /* login */
 
 .login {
@@ -200,27 +222,33 @@ form {
   border: 1px solid transparent;
   position: relative;
 }
+
 .login a {
   line-height: 13px;
   display: block;
   line-height: 17px;
 }
+
 .login__sign {
   font-size: 12px;
 }
+
 .accaunt {
   align-items: center;
   display: flex;
 }
+
 .accound__sign {
   font-size: 13px;
   font-weight: 600;
 }
+
 .login:hover .sign-modal {
   display: block;
 }
-.login:hover ~ .loginview,
-.language:hover ~ .languageView {
+
+.login:hover~.loginview,
+.language:hover~.languageView {
   display: block;
 }
 
@@ -260,6 +288,7 @@ form {
   align-items: center;
   justify-content: center;
 }
+
 .sign-modal-login-text {
   width: 130px;
   height: 30px;
@@ -267,13 +296,16 @@ form {
   align-items: center;
   justify-content: space-between;
 }
+
 .sign-modal-login__phograph {
   font-size: 11px;
 }
+
 .sign-modal-login__link {
   font-size: 11px;
   color: #007185;
 }
+
 .sign-modal-login-btn button {
   width: 200px;
   height: 35px;
@@ -281,39 +313,48 @@ form {
   border: 1px solid #ff7d32;
   border-radius: 3px;
 }
+
 .sign-modal-login-btn button:active {
   background: linear-gradient(0deg, #ff8400, #f8c672);
 }
+
 .hr {
   width: 100%;
   height: 1px;
   background: rgba(0, 0, 0, 0.1);
 }
+
 .sign-hero {
   display: flex;
   justify-content: space-between;
   padding-top: 12px;
 }
+
 .line {
   width: 1px;
   height: 300px;
   background: rgba(0, 0, 0, 0.1);
 }
+
 .sign-login {
   width: 200px;
 }
+
 .sign-login h4 {
   line-height: 30px;
 }
+
 .sign-login a {
   font-size: 13px;
   line-height: 23px;
   color: black;
 }
+
 .sign-login a:hover {
   color: #ffaf24;
   text-decoration: underline;
 }
+
 /* order */
 
 .order {
@@ -325,34 +366,42 @@ form {
   justify-content: center;
   border: 1px solid transparent;
 }
+
 .order__return {
   color: var(--white);
   font-size: 12px;
   line-height: 10px;
 }
+
 .order__orders {
   color: var(--white);
   font-weight: 600;
   font-size: 14px;
 }
+
 /* card */
 .card {
   height: 80%;
   border: 1px solid transparent;
+  position: relative;
 }
+
 .card-link {
   display: flex;
   align-items: flex-end;
 }
+
 .card-link__img {
   width: 38px;
   height: 40px;
 }
+
 .card-link__text {
   font-size: 14px;
   font-weight: 600;
   line-height: 30px;
 }
+
 .order:hover,
 .login:hover,
 .language:hover,
@@ -365,11 +414,24 @@ form {
   cursor: pointer;
 }
 
+.cardCount {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff5e00;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: 0;
+  right: 8%;
+}
+
 /* navbar */
 .navbar {
   width: 100%;
   background: #222;
 }
+
 .navbar-nav {
   max-width: 800px;
   height: 40px;
@@ -378,6 +440,7 @@ form {
   align-items: center;
   justify-content: flex-start;
 }
+
 .navbar-nav-list {
   width: 60px;
   height: 25px;
@@ -386,6 +449,7 @@ form {
   justify-content: center;
   border: 1px solid transparent;
 }
+
 .navbar-nav__button {
   width: 30px;
   border: 1px solid transparent;
@@ -393,15 +457,18 @@ form {
   color: whitesmoke;
   font-weight: 700;
 }
+
 .navbar-nav-link {
   width: max-content;
   border: 1px solid transparent;
   padding: 4px 6px;
 }
+
 .navbar-nav-link a {
   letter-spacing: -0.5px;
   font-weight: 300;
 }
+
 .viewe {
   width: 100%;
   height: 100vh;
@@ -411,6 +478,7 @@ form {
   background: rgba(0, 0, 0, 0.7);
   z-index: 9;
 }
+
 .mobileinput {
   width: 100%;
   padding: 10px;
@@ -418,6 +486,7 @@ form {
   justify-content: center;
   background: #222;
 }
+
 .mobileinput input {
   width: 99%;
   height: 45px;
@@ -429,6 +498,7 @@ form {
   border: none;
   position: relative;
 }
+
 .mobileBtn {
   position: absolute;
   right: 11px;
@@ -438,10 +508,13 @@ form {
   border: none;
   background: #ffb536;
 }
+
 .navbar-nav-mobile {
   display: none;
 }
+
 @media (max-width: 1200px) {
+
   .location,
   .login,
   .language,
@@ -450,13 +523,16 @@ form {
   form {
     display: none;
   }
+
   header {
     display: flex;
     align-items: center;
   }
+
   .card {
     margin-left: auto;
   }
+
   .navbar-nav-mobile,
   .mobileinput {
     display: flex;
