@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import AddToCard from '../../components/addToCard/AddToCard';
 import c from './ProductItem.module.css';
+import { v4 as uuidv4 } from 'uuid';
 
 const ProductItem = () => {
   const { productid } = useParams();
@@ -25,6 +26,7 @@ const ProductItem = () => {
           {dataProduct?.image?.map((imagedataProduct, i) => {
             return (
               <img
+                key={uuidv4()}
                 onMouseEnter={() => setSdataProductectImg(i)}
                 src={imagedataProduct?.url}
                 style={{

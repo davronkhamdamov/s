@@ -15,7 +15,6 @@ const Shop = () => {
       setCheckId(true);
     } else setCheckId(false);
   }, [productId]);
-  console.log(productIdData);
   return (
     <div>
       {checkId && (
