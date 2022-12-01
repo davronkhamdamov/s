@@ -15,9 +15,6 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
   if (pathname.includes('login') || pathname.includes('signup')) {
     return;
   }
-  setTimeout(() => {
-    setLoader(false);
-  }, 1500);
   return (
     <>
       <div className="header">
@@ -318,7 +315,6 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
           setIsSidebarOpen(false);
         }}
       ></div>
-      {loader && <Loader />}
     </>
   );
 }
